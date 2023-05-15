@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var fun1 = ()=>{
+            console.log(1);
+        }
+        var fun2 = ()=>{
+            console.log(2);
+        }
+        var fun3 = ()=>{
+            console.log(3);
+        }
+        window.addEventListener("load",fun2);
+        document.addEventListener("DOMContentLoaded",fun3);
+        </script>
+</head>
+<body>
+    <h1>Hey There, Welcome to <font color="red">Angular</font> Module.</h1>
+    <script>
+        document.getElementsByTagName("body")[0].onload = fun1;
+        </script>
+</body>
+</html>
+
+<!-- Order of Execution is 3,2,1 -->

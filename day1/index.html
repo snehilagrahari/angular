@@ -15,16 +15,18 @@
         var fun3 = ()=>{
             console.log(3);
         }
-        window.addEventListener("load",fun2);
-        document.addEventListener("DOMContentLoaded",fun3);
+        
         </script>
 </head>
 <body>
     <h1>Hey There, Welcome to <font color="red">Angular</font> Module.</h1>
     <script>
         document.getElementsByTagName("body")[0].onload = fun1;
-        </script>
+
+window.addEventListener("load",fun2);
+document.addEventListener("DOMContentLoaded",fun3);
+    </script>
 </body>
 </html>
 
-<!-- Order of Execution is 3,2,1 -->
+<!-- Order of Execution is 3,1,2 -->
